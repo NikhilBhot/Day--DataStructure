@@ -79,5 +79,23 @@ namespace LinkList
                 current.Next = newNode;
             }
         }
+        /*Ability to insert 30 between 56 and 70
+            - Final Sequence: 56->30->70
+         */
+        public void InsertAfter(int value, int data)
+        {
+            Node newNode = new Node(data);
+            Node current = head;
+            while (current != null)
+            {
+                if (current.Data == value)
+                {
+                    newNode.Next = current.Next;
+                    current.Next = newNode;
+                    break;
+                }
+                current = current.Next;
+            }
+        }
     }
 }
