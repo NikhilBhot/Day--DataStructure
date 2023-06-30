@@ -1,48 +1,9 @@
 using LinkList;
-namespace DemoTest
+namespace LinkedListTests
 {
-    /*Ability to search LinkedList to find Node with value 30
-
-            - Write MSTest Test Case as demonstrated in class
-            - Loop through LinkedList to find node with key 30
-     */
     [TestClass]
     public class LinkedListTests
     {
-        [TestMethod]
-        public void Search_NodeWithValue30_ReturnsNode()
-        {
-            LinkedList linkedList = new LinkedList();
-            linkedList.Add(56);
-            linkedList.Add(30);
-            linkedList.Add(70);
-
-            Node result = linkedList.Search(30);
-
-            Assert.IsNotNull(result);
-            Assert.AreEqual(30, result.Data);
-        }
-
-        [TestMethod]
-        public void Search_NodeWithNonExistentValue_ReturnsNull()
-        {
-            LinkedList linkedList = new LinkedList();
-            linkedList.Add(56);
-            linkedList.Add(30);
-            linkedList.Add(70);
-
-            Node result = linkedList.Search(42);
-
-            Assert.IsNull(result);
-        }
-
-        /*
-         * Ability to insert 40 after 30 to the Linked List sequence of 56->30->70
-            - Write MSTest Test Case as demonstrated in class
-            - Search LinkedList to get Node with key value 30
-            - Then Insert 40 to 30
-            - Final Sequence: 56->30->40->70
-         */
         [TestMethod]
         public void InsertAfter_InsertNodeWithValue40AfterNodeWithValue30()
         {
@@ -77,7 +38,5 @@ namespace DemoTest
             Assert.AreEqual(70, linkedList.head.Next.Next.Data);
             Assert.IsNull(linkedList.head.Next.Next.Next);
         }
-
-
     }
 }

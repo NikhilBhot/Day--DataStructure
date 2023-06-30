@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkList", "LinkList.csproj", "{26941AF2-CDF7-4666-AFE7-37E981543B18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoTest", "..\DemoTest\DemoTest.csproj", "{F26D6E78-3782-49AC-B138-1F3E62F70FC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoTest", "..\DemoTest\DemoTest.csproj", "{F26D6E78-3782-49AC-B138-1F3E62F70FC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

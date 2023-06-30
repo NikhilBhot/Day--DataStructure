@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,7 +9,7 @@ namespace LinkList
 {
     public class LinkedList
     {
-        private Node head;
+        public Node head;
 
         public LinkedList()
         {
