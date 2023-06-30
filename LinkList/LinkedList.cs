@@ -109,5 +109,25 @@ namespace LinkList
                 head = head.Next;
             }
         }
+        /*Ability to delete the last element in the LinkedList of sequence 56->30->70 - Write popLast method
+                - Note there is new tail
+                - Final Sequence: 56->30
+             */
+        public void PopLast()
+        {
+            if (head == null || head.Next == null)
+            {
+                head = null;
+            }
+            else
+            {
+                Node current = head;
+                while (current.Next.Next != null)
+                {
+                    current = current.Next;
+                }
+                current.Next = null;
+            }
+        }
     }
 }
