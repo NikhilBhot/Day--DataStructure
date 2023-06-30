@@ -129,5 +129,19 @@ namespace LinkList
                 current.Next = null;
             }
         }
+
+        public Node Search(int key)
+        {
+            Node current = head;
+            while (current != null)
+            {
+                if (current.Data == key)
+                {
+                    return current;
+                }
+                current = current.Next;
+            }
+            return null; // Node with key not found
+        }
     }
 }
