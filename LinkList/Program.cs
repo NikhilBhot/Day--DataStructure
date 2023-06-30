@@ -40,10 +40,22 @@
              * Ability to insert 30 between 56 and 70
                    - Final Sequence: 56->30->70
              */
+            //linkedList.Add(56);
+            //linkedList.InsertAfter(56, 30);
+            //linkedList.Add(70);
+
+            //linkedList.Display();
+
             linkedList.Add(56);
-            linkedList.InsertAfter(56, 30);
+            linkedList.Add(30);
             linkedList.Add(70);
 
+            Console.WriteLine("Initial LinkedList:");
+            linkedList.Display();
+
+            linkedList.Pop();
+
+            Console.WriteLine("\nLinkedList after deleting the first element:");
             linkedList.Display();
         }
     }
